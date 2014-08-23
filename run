@@ -1,0 +1,3 @@
+#! /bin/sh
+
+java -cp untrusted.jar:securitymanager.jar -Djava.security.policy==security.policy test.Test
