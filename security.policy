@@ -3,5 +3,5 @@ grant codebase "file:${user.dir}/securitymanager.jar" {
 };
 
 grant codebase "file:${user.dir}/untrusted.jar" {
-//  permission test.ToggleSecurityManagerPermission;
+//  permission demo.ToggleSecurityManagerPermission;
 };

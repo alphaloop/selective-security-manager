@@ -5,9 +5,9 @@ then
   mkdir bin
 fi
 
-javac -d bin src/test/*.java
+javac -d bin src/demo/*.java
 
 cd bin
-jar cvf ../securitymanager.jar test/SelectiveSecurityManager*.class test/Test*.class test/ToggleSecurityManagerPermission.class
-jar cvf ../untrusted.jar test/UntrustedCode.class
+jar cvf ../securitymanager.jar demo/SelectiveSecurityManager*.class demo/Test*.class demo/ToggleSecurityManagerPermission.class
+jar cvf ../untrusted.jar demo/UntrustedCode.class
 cd ..
