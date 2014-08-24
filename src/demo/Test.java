@@ -28,6 +28,8 @@ public class Test {
     } catch (AccessControlException e) {
       // Good
     }
+    
+    System.out.println("All tests passed.");
   }
 
   public static void runTests(SelectiveSecurityManager securityManager) {
