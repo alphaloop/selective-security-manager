@@ -8,6 +8,6 @@ fi
 javac -d bin src/test/*.java
 
 cd bin
-jar cvf ../securitymanager.jar test/SelectiveSecurityManager*.class test/Test*.class
+jar cvf ../securitymanager.jar test/SelectiveSecurityManager*.class test/Test*.class test/ToggleSecurityManagerPermission.class
 jar cvf ../untrusted.jar test/UntrustedCode.class
 cd ..

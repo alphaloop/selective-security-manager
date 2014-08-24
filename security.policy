@@ -1,3 +1,7 @@
 grant codebase "file:${user.dir}/securitymanager.jar" {
   permission java.security.AllPermission;
 };
+
+grant codebase "file:${user.dir}/untrusted.jar" {
+//  permission test.ToggleSecurityManagerPermission;
+};

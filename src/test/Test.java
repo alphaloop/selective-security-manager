@@ -14,16 +14,15 @@ public class Test {
 		securityManager.enable();
 		
 		runTestsInAnotherThread(securityManager);
-		
-		securityManager.disable();
 
+		securityManager.disable();
+		
 		try {
 			UntrustedCode.disableSecurityManager();
 			throw new RuntimeException("Able to disable security manager from untrusted code.");
 		} catch (AccessControlException e) {
 		  // Good
 		}
-		
 	}
 	
 	public static void runTests(SelectiveSecurityManager securityManager) {
