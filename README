@@ -1,0 +1,7 @@
+This code demonstrates how to create a Java SecurityManager that can be enabled and disabled programatically on specifric threads.
+
+To build the code:
+$ ./mkJars
+
+To run the tests:
+$ ./run
